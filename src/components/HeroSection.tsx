@@ -40,14 +40,14 @@ const HeroSection = () => {
 
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-space mb-6 animate-fade-in-up">
-            Build <span className="text-gradient">Stunning</span><br />
-            Web Experiences
+            Transform Data Into <span className="text-gradient">Actionable</span><br />
+            Business Insights
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300">
-            Create beautiful, responsive websites with modern design principles, 
-            smooth animations, and exceptional user experiences that convert visitors into customers.
+            Unlock the power of your data with advanced analytics, machine learning, and 
+            intelligent reporting that drives growth and competitive advantage.
           </p>
 
           {/* CTA Buttons */}
@@ -57,7 +57,7 @@ const HeroSection = () => {
               onClick={() => scrollToSection('contact')}
               className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105"
             >
-              Start Your Project
+              Book a Consultation
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             
@@ -68,18 +68,18 @@ const HeroSection = () => {
               className="px-8 py-4 text-lg font-semibold border-2 hover:bg-gray-50 transition-all duration-300 hover:scale-105"
             >
               <Play className="mr-2 h-5 w-5" />
-              See How It Works
+              View Our Services
             </Button>
           </div>
 
           {/* Social Proof */}
           <div className="animate-fade-in-up animation-delay-900">
-            <p className="text-sm text-gray-500 mb-4">Trusted by teams at</p>
+            <p className="text-sm text-gray-500 mb-4">Trusted by industry leaders</p>
             <div className="flex justify-center items-center space-x-8 opacity-60">
-              <div className="text-2xl font-bold text-gray-400">Google</div>
-              <div className="text-2xl font-bold text-gray-400">Microsoft</div>
-              <div className="text-2xl font-bold text-gray-400">Apple</div>
-              <div className="text-2xl font-bold text-gray-400">Netflix</div>
+              <div className="text-2xl font-bold text-gray-400">RetailMax</div>
+              <div className="text-2xl font-bold text-gray-400">SecureBank</div>
+              <div className="text-2xl font-bold text-gray-400">HealthFirst</div>
+              <div className="text-2xl font-bold text-gray-400">TechFlow</div>
             </div>
           </div>
         </div>

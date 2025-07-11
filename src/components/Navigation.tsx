@@ -16,19 +16,31 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const handleNavigation = (href: string) => {
+    if (href.startsWith('/#')) {
+      // Handle anchor links within the home page
+      if (window.location.pathname !== '/') {
+        window.location.href = href;
+      } else {
+        const sectionId = href.substring(2);
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    } else {
+      // Handle regular page navigation
+      window.location.href = href;
     }
     setIsMenuOpen(false);
   };
 
   const navItems = [
-    { label: 'Home', href: 'hero' },
-    { label: 'Features', href: 'features' },
-    { label: 'Testimonials', href: 'testimonials' },
-    { label: 'Contact', href: 'contact' },
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
+    { label: 'Services', href: '/services' },
+    { label: 'Case Studies', href: '/case-studies' },
+    { label: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -40,11 +52,11 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <button 
-              onClick={() => scrollToSection('hero')}
+              onClick={() => handleNavigation('/')}
               className="text-2xl font-bold font-space text-gradient hover:scale-105 transition-transform"
-              aria-label="Graceful Landing Home"
+              aria-label="DataVision Analytics Home"
             >
-              Graceful Landing
+              DataVision Analytics
             </button>
           </div>
 
@@ -54,7 +66,7 @@ const Navigation = () => {
               {navItems.map((item) => (
                 <button
                   key={item.label}
-                  onClick={() => scrollToSection(item.href)}
+                  onClick={() => handleNavigation(item.href)}
                   className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
                 >
                   {item.label}
@@ -66,7 +78,7 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => handleNavigation('/#contact')}
               className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Get Started
@@ -94,7 +106,7 @@ const Navigation = () => {
             {navItems.map((item) => (
               <button
                 key={item.label}
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => handleNavigation(item.href)}
                 className="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors"
               >
                 {item.label}
@@ -102,7 +114,7 @@ const Navigation = () => {
             ))}
             <div className="pt-2">
               <Button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => handleNavigation('/#contact')}
                 className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white"
               >
                 Get Started
