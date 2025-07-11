@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+Analytics Agency – Portfolio Projects Hub 🌐
+A modern and elegant website designed for an Analytics & Data Solutions Agency. This site highlights services, showcases projects, and offers a fast, responsive user experience using the latest frontend technologies.
+Live Site: [](https://graceful-landing-forge.vercel.app/)
 
-## Project info
+✨ Features
+✍️ Elegant and responsive landing page layout
 
-**URL**: https://lovable.dev/projects/1078a06a-80db-43cd-af1f-241c941b0974
+🖼️ Project cards with descriptions and hover animations
 
-## How can I edit this code?
+⚡ Lightning-fast development with Vite
 
-There are several ways of editing your application.
+🎨 Modern design using Tailwind CSS & shadcn/ui components
 
-**Use Lovable**
+🧠 Built with TypeScript and React for scalable, type-safe development
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1078a06a-80db-43cd-af1f-241c941b0974) and start prompting.
+🛠 Tech Stack
+Frontend Framework: React
 
-Changes made via Lovable will be committed automatically to this repo.
+Build Tool: Vite
 
-**Use your preferred IDE**
+Styling: Tailwind CSS, shadcn/ui
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Language: TypeScript
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Deployment: Vercel
 
-Follow these steps:
+🚀 Getting Started
+Prerequisites
+Ensure you have the following installed:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Node.js (v16 or above)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+npm or yarn
 
-# Step 3: Install the necessary dependencies.
-npm i
+Installation
+bash
+Copy
+Edit
+# Step 1: Clone the repository
+git clone https://github.com/kalyannagireddy/Analytics_Agency.git
+cd your-repo-name
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 2: Install dependencies
+npm install
+
+# Step 3: Start the development server
 npm run dev
-```
+Your app will be running at http://localhost:5173.
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1078a06a-80db-43cd-af1f-241c941b0974) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+🧾 Folder Structure
+bash
+Copy
+Edit
+.
+├── public/             # Static assets
+├── src/                # Source code
+│   ├── components/     # Reusable React components
+│   ├── pages/          # Page components (Home, Projects, etc.)
+│   ├── App.tsx         # Main App component
+│   └── main.tsx        # Entry point
+├── tailwind.config.ts  # Tailwind configuration
+├── tsconfig.json       # TypeScript config
+└── vite.config.ts      # Vite config
