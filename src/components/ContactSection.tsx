@@ -98,20 +98,20 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'hello@gracefullanding.com',
-      subtext: 'We reply within 24 hours'
+      details: 'ailearn99@onmicrosoft.com',
+      subtext: 'We reply within 12 hours'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: '+1 (555) 123-4567',
+      details: '+91 912345678',
       subtext: 'Mon-Fri 9AM-6PM EST'
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: 'San Francisco, CA',
-      subtext: 'Remote-first company'
+      details: 'Ajanta Enclave, Bowrampet, Hyderabad',
+      subtext: 'Remote-first Analytics company'
     }
   ];
 

@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { ArrowRight, Play, Star } from 'lucide-react';
+// import { ArrowRight, Play, Star } from 'lucide-react'; // Commented out due to missing module
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
@@ -33,10 +33,7 @@ const HeroSection = () => {
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           
           {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium text-gray-700 mb-8 animate-fade-in">
-            <Star className="w-4 h-4 text-yellow-500 mr-2" />
-            Trusted by 10,000+ developers
-          </div>
+          {/* Removed the badge displaying 'Trusted by 10,000+ developers' */}
 
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-space mb-6 animate-fade-in-up">
@@ -58,7 +55,7 @@ const HeroSection = () => {
               className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105"
             >
               Book a Consultation
-              <ArrowRight className="ml-2 h-5 w-5" />
+              {/* <ArrowRight className="ml-2 h-5 w-5" /> */}
             </Button>
             
             <Button 
@@ -67,14 +64,13 @@ const HeroSection = () => {
               onClick={() => scrollToSection('features')}
               className="px-8 py-4 text-lg font-semibold border-2 hover:bg-gray-50 transition-all duration-300 hover:scale-105"
             >
-              <Play className="mr-2 h-5 w-5" />
+              {/* Removed Play icon due to missing import */}
               View Our Services
             </Button>
           </div>
 
           {/* Social Proof */}
           <div className="animate-fade-in-up animation-delay-900">
-            <p className="text-sm text-gray-500 mb-4">Trusted by industry leaders</p>
             <div className="flex justify-center items-center space-x-8 opacity-60">
               <div className="text-2xl font-bold text-gray-400">RetailMax</div>
               <div className="text-2xl font-bold text-gray-400">SecureBank</div>
